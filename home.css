@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(252, 252, 252);
+    overflow-x: hidden;
+}
+
+/* Start of Image Slider */
+
+.promotion-banner {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 500%;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    position: relative;
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide-text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.slide-text h1 {
+    font-size: 2.9rem;
+    font-weight: 450;
+    font-family: "Roboto";
+    letter-spacing: 5px;
+    padding: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 100%;
+    margin-top: -150px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 30px;
+}
+
+.manual-btn:hover {
+    background: #dddddd;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div{
+    border: 2px solid green;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: black;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: black;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: black;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background: black;
+}
+
+/* End of Image Slider */
+
+.quotes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-family: "Roboto", sans-serif;
+    background-color: black; 
+    color: white;
+    font-size: 0.95rem;
+    height: 75px;
+}
+
+/* Start of Second Image Slider */
+
+.content-slider {
+    position: relative;
+    height: 92.5vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.content-slides-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.content-slides {
+    display: flex;
+    width: 500%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.content-slide {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 7rem;
+    box-sizing: border-box;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    max-width: 400px;
+    font-family: 'Roboto';
+    margin-right: 2rem;
+}
+
+.text-content h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.text-content p {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+.text-content a {
+    font-size: 1rem;
+    color: rgb(24, 24, 24);
+    text-decoration: none;
+    letter-spacing: 1.5px;
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin-left: 4rem;
+}
+
+.image-content img {
+    height: 50vh;
+    max-width: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+button.prev {
+    left: 50px;
+}
+
+button.next {
+    right: 50px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 1040px) {
+    /* Add your responsive CSS rules here */
+    .promotion-banner .slides,
+    .slides .slide {
+        height: auto;
+    }
+
+    .slide img {
+        height: 50vh;
+    }
+
+    .navigation-manual {
+        margin-top: 0;
+    }
+
+    .manual-btn {
+        margin-right: 15px;
+    }
+
+    .quotes {
+        height: auto;
+    }
+
+    .content-slider {
+        height: auto;
+        margin-top: 1rem;
+    }
+
+    .content-slide {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .text-content {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .image-content {
+        margin-left: 0;
+    }
+
+    .image-content img {
+        height: auto;
+        width: 100%;
+    }
+
+    button.prev, 
+    button.next {
+        font-size: 1rem;
+        padding: 8px;
+        left: 30px;
+        right: 30px;
+    }
+}

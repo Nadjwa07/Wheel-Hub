@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Chocolate Classical Sans", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(252, 252, 252);
+    overflow-x: hidden;
+}
+
+.hero {
+    background-image: url(/Assets/car_engineer2\ 1.png);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    position: relative;
+    padding-left: 50px;
+    margin-top: 5rem;
+}
+
+.title {
+    color: black;
+    font-size: 1.8rem;
+    padding: none;
+    margin: 0;
+    word-spacing: none;
+}
+
+.name {
+    color: black;
+    font-size: 100px;
+    font-weight: bolder;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+}
+
+.descriptions {
+    color: black;
+    font-size: 1.2rem;
+    padding: none;
+    margin: 0;
+    word-spacing: none;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem calc((100vw - 1300px)/2);
+}
+
+
+h2 {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+
+.about-us img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.vision {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem calc((100vw - 1300px)/2);
+}
+
+.vision img {
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.mission {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem calc((100vw - 1300px)/2);
+}
+
+.mission img {
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.mission div {
+    padding-left: 20px;
+}
+
+.our {
+    background-color: #f1f1f1;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.activities {
+    display: flex;
+    flex-direction: row;
+    background-color: #f1f1f1;
+    overflow-x: scroll;
+    white-space: wrap;
+    object-fit: cover;
+}
+
+.activities div {
+    margin: 20px;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+    justify-content: space-between;
+}
+
+.activities div img {
+    width: 400px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 20px;
+}
+

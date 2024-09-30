@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WheelHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=DM+Serif+Display:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="dropdown">
+            <div class="dropdown-toggle">
+                <h2 class="dropdown-title">MENU</h2>
+                <img src="/Assets/ui/down_down_arrow.png" class="down-arrow" alt="Down-Arrow">
+            </div>
+            <div class="dropdown-content">
+                <a href="/home.html">Home</a>
+                <a href="/promotion.html">Promotions</a>
+                <a href="/cars.html">Cars</a>
+                <a href="/aboutus.html">About Us</a>
+                <a href="/register.html">Register</a>
+            </div>
+        </div>
+        <div class="navbar-logo-wrapper">
+            <img src="/Assets/logo.png" class="navbar-logo" alt="Logo">
+        </div>
+    </nav>
+
+    <!-- Registration -->
+    <div class="register-container">
+        <div id="register-form">
+            <div id="logo">
+                <img id="register-logo" src="/Assets/WH-Logo-CUT.png" alt="">
+            </div>
+            <div class="form">
+                <div id="error"></div>
+                <form id="regist" name="regis" class="form-regist">
+                    <input type="text" name="name" id="name" placeholder="Username">
+                    <small class="error" id="error-name"></small>
+    
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <small class="error" id="error-email"></small>
+    
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <small class="error" id="error-password"></small>
+    
+                    <input type="password" name="conf-pass" id="conf" placeholder="Confirm Password">
+                    <small class="error" id="error-conf"></small>
+    
+                    <div id="gender">
+                        <label for="gender">Gender:</label>
+                        <input type="radio" name="gender" id="gender-male">
+                        <label for="gender-male">Male</label>
+                        <input type="radio" name="gender" id="gender-female">
+                        <label for="gender-female">Female</label>
+                    </div>
+    
+                    <input type="date" name="dob" id="dob">
+                    <small class="error" id="error-dob"></small>
+    
+                    <div id="agreement">
+                        <input type="checkbox" name="terms" id="terms">
+                        <label for="terms"> I agree on terms & conditions</label>
+                        <small class="error" id="error-terms"></small>
+                    </div>
+    
+                    <div id="submit-button">
+                        <button type="submit" id="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+        
+    <!-- Footer  -->
+    <footer>
+        <div class="section">
+            <h4>Wheel Hub</h4>
+            <p>Jl. Senantiasa Berkah No.79</p>
+            <p>081274498962</p>
+            <p>Grogol, Jakarta Barat</p>
+        </div>
+
+        <div class="section">
+            <h4>Guideline</h4>
+            <ul>
+                <li><a style="color: white;" href="#">Terms and Conditions</a></li>
+                <li><a style="color: white;" href="#">Privacy Policy</a></li>
+                <li><a style="color: white;" href="#">Refunds and Returns</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h4>Find Us On</h4>
+            <div class="instagram">
+                <img width="20px" height="20px" src="/Assets/about_us/instagram.png" alt="">
+                <p style="margin: 5px;">Instagram</p>
+            </div>
+            <div class="whatsapp">
+                <img width="20px" height="20px" src="/Assets/about_us/whatsapp.png" alt="">
+                <p style="margin: 5px;">WhatsApp</p>
+            </div>
+            <div class="facebook">
+                <img width="20px" height="20px" src="/Assets/about_us/facebook.png" alt="">
+                <p style="margin: 5px;">Facebook</p>
+            </div>
+        </div> 
+    </footer>
+    <p class="copyright">&copy; 2024 WheelHub Inc.</p>
+
+</body>
+<script src="register.js"></script>
+</html>

@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: rgb(252, 252, 252);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.register-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+#register-form {
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#register-logo {
+    width: 200px;
+    height: auto;
+}
+
+.form-regist, label, input, small {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-family: "Chocolate Classical Sans";
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+small {
+    font-size: 0.75rem;
+    color: red;
+}
+
+#gender {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#gender label {
+    display: flex;
+    align-items: center;
+}
+
+#gender input[type="radio"] {
+    margin-right: 0.5rem;
+    width: auto;
+    transform: scale(1.4);
+    display: inline-block;
+    transform: translateY(30%);
+}
+
+#agreement {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+#agreement input[type="checkbox"] {
+    margin: 0 0.5rem 0 0;
+    width: auto;
+}
+
+#agreement label {
+    margin: 0;
+}
+
+#submit-button {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#submit {
+    background-color: #000;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-family: "Chocolate Classical Sans";
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #333;
+}
